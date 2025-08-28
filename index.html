@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字练习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>打字速度测试</h1>
+        <div class="controls">
+            <div class="article-selection">
+                <label for="article-select">选择文章:</label>
+                <select name="articles" id="article-select"></select>
+            </div>
+        </div>
+        <div id="typing-area"></div>
+        <div class="stats">
+            <div class="stat">
+                <div class="label">速度 (WPM)</div>
+                <div id="wpm-display" class="value">0</div>
+            </div>
+            <div class="stat">
+                <div class="label">准确率 (%)</div>
+                <div id="accuracy-display" class="value">100</div>
+            </div>
+            <div class="stat">
+                <div class="label">时间 (秒)</div>
+                <div id="timer-display" class="value">0</div>
+            </div>
+        </div>
+        <button id="restart-button">重新开始</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
